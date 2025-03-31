@@ -20,3 +20,8 @@ vim.cmd('set completeopt+=noselect')
 
 -- Border for hover boxes
 vim.o.winborder = 'rounded'
+
+-- enable virtual text on current line
+vim.diagnostic.config({
+  virtual_text = { current_line = true }
+})
