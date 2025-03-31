@@ -1,4 +1,7 @@
+require("config.options")
+require("config.keymap")
 require("config.lazy")
+
 vim.lsp.enable({'luals', 'typescript'})
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
