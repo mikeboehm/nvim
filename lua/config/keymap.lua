@@ -4,7 +4,8 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 -- fast system clipboard yank prefix
-vim.keymap.set({ "n", "v" }, "<leader>y", '"+y')
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = 'Yank to clipboard' })
+vim.kepmap.set({ "n", "v" }, "<leader>p", '"+p', { desc = 'Paste from clipboard' })
 
 -- cursor up/down 5 lines
 vim.keymap.set("", "<C-j>", "5j")
